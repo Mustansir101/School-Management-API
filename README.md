@@ -9,7 +9,7 @@ A RESTful API for managing school data with proximity-based sorting functionalit
 
 ## 🌐 Live Demo
 
-**API Base URL**: `https://school-management-api-2dh4.onrender.com`
+**API Base URL**: [`https://school-management-api-2dh4.onrender.com`](https://school-management-api-2dh4.onrender.com)
 
 **Test the API:**
 
@@ -51,7 +51,7 @@ CREATE INDEX idx_coordinates ON schools (latitude, longitude);
 
 **Import the Postman collection to test all endpoints:**
 
-**Check it out** : [School Management API Collection](https://documenter.getpostman.com/view/39785900/2sB3Hkpfi9)
+**Check it out** : [`School Management API Collection`](https://documenter.getpostman.com/view/39785900/2sB3Hkpfi9)
 
 ### Endpoints
 
@@ -143,7 +143,6 @@ CREATE INDEX idx_coordinates ON schools (latitude, longitude);
 - **Error Handling**: Proper HTTP status codes and error messages
 - **CORS Support**: Cross-origin resource sharing enabled
 - **Environment Configuration**: Flexible configuration for different environments
-
 
 ## 🗄️ Database Schema
 
