@@ -2,20 +2,20 @@
 
 A RESTful API for managing school data with proximity-based sorting functionality. Built with Node.js, Express.js, and MySQL.
 
-## 🚀 Features
-
-- **Add Schools**: Store school information with geographic coordinates
-- **Proximity Search**: Find schools sorted by distance from user's location
-- **Input Validation**: Comprehensive validation for all inputs
-- **Error Handling**: Proper HTTP status codes and error messages
-- **CORS Support**: Cross-origin resource sharing enabled
-- **Environment Configuration**: Flexible configuration for different environments
-
 ## 📋 Prerequisites
 
 - Node.js (v18.0.0 or higher)
 - MySQL (v8.0 or higher)
-- npm or yarn package manager
+
+## 🌐 Live Demo
+
+**API Base URL**: `https://school-management-api-2dh4.onrender.com`
+
+**Test the API:**
+
+- Health Check: `/health`
+- Add School: `POST /api/addSchool`
+- List Schools: `GET /api/listSchools?latitude=40.7128&longitude=-74.0060`
 
 ## 🛠️ Installation
 
@@ -47,10 +47,11 @@ CREATE INDEX idx_coordinates ON schools (latitude, longitude);
 
 ## 🔗 API Endpoints
 
-### Base URL
+### 📮 Postman Collection
 
-- **Local**: `http://localhost:3000`
-- **Production**: `[YOUR_DEPLOYED_URL_HERE]`
+**Import the Postman collection to test all endpoints:**
+
+**Check it out** : [School Management API Collection](https://documenter.getpostman.com/view/39785900/2sB3Hkpfi9)
 
 ### Endpoints
 
@@ -134,51 +135,15 @@ CREATE INDEX idx_coordinates ON schools (latitude, longitude);
   }
   ```
 
-## 📮 Postman Collection
+## 🚀 Features
 
-**Import the Postman collection to test all endpoints:**
+- **Add Schools**: Store school information with geographic coordinates
+- **Proximity Search**: Find schools sorted by distance from user's location
+- **Input Validation**: Comprehensive validation for all inputs
+- **Error Handling**: Proper HTTP status codes and error messages
+- **CORS Support**: Cross-origin resource sharing enabled
+- **Environment Configuration**: Flexible configuration for different environments
 
-**Check it out** : [School Management API Collection](https://documenter.getpostman.com/view/39785900/2sB3Hkpfi9)
-
-**Collection includes:**
-
-- All API endpoints with example requests
-- Different test scenarios (valid/invalid data)
-- Multiple location examples for proximity testing
-
-## 🌐 Live Demo
-
-**API Base URL**: `[YOUR_DEPLOYED_URL_HERE]`
-
-**Test the API:**
-
-- Health Check: `/health`
-- Add School: `POST /api/addSchool`
-- List Schools: `GET /api/listSchools?latitude=40.7128&longitude=-74.0060`
-
-## 🏗️ Project Structure
-
-```
-school-management-api/
-│
-├── src/ index.js          # Main server file
-│
-├── database/ index.js          # Database configuration
-│
-├── routes/ index.js          # API routes
-│
-├── .env                  # Environment variables
-├── package.json         # Dependencies and scripts
-```
-
-## 🛡️ Input Validation
-
-The API includes comprehensive input validation:
-
-- **Required Fields**: All fields must be provided
-- **Data Types**: Proper type checking for strings and numbers
-- **Coordinate Validation**: Latitude (-90 to 90) and longitude (-180 to 180) range checking
-- **String Sanitization**: Automatic trimming of whitespace
 
 ## 🗄️ Database Schema
 
