@@ -46,8 +46,8 @@ router.post("/addSchool", async (req, res) => {
 
     // Insert into database
     const [result] = await pool.query(
-      `INSERT INTO schools (name, address, latitude, longitude) 
-      VALUES ('${name.trim()}', '${address.trim()}', ${lat}, ${lng})`
+      `INSERT INTO schools (name, address, latitude, longitude, created_at, updated_at) 
+      VALUES ('${name}', '${address}', ${lat}, ${lng}, NOW(), NOW())`
     );
 
     res.status(201).json({
